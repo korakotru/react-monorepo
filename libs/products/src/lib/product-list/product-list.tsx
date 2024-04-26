@@ -7,7 +7,7 @@ export function ProductList(props: ProductListProps) {
   return (
     <div className={styles['container']}>
       <h1>Welcome to ProductList!</h1>
-      <p>THis is a change. </p>
+      <p>This is a change... </p>
     </div>
   );
 }
