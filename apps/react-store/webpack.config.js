@@ -7,6 +7,7 @@ module.exports = {
     path: join(__dirname, '../../dist/apps/react-store'),
   },
   devServer: {
+    historyApiFallback: true, //todo:korakot - fixed the react-router-dom 404
     port: 4200,
   },
   plugins: [

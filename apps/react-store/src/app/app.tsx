@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 // import NxWelcome from './nx-welcome';
 import { ProductList } from '@react-monorepo/products';
+import { OrderList } from '@react-monorepo/orders';
 
 function Home() {
   return <h1>Home</h1>;
@@ -12,8 +13,10 @@ function Home() {
 export function App() {
   return (
     <Routes>
-      <Route index path="/" element={<Home />}></Route>
-      <Route path="/products" element={<ProductList />}></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/products" element={<ProductList />} />
+      <Route path="/orders" element={<OrderList />} />
     </Routes>
   );
 }
