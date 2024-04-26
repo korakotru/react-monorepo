@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "defaultBase": "master",
+  "defaultBase": "main",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
@@ -75,6 +75,14 @@
         "linter": "eslint",
         "unitTestRunner": "vitest"
       }
+    }
+  }
+  ,"targetDefaults": {
+    "build": {
+      "cache": false
+    },
+    "test": {
+      "cache": false
     }
   }
 }
